@@ -4,6 +4,11 @@
 # start page (path "/") because otherwise Apache will apply the rewriting rules
 # to each configured DirectoryIndex file (e.g. index.php, index.html, index.pl).
 Header set Content-Security-Policy "default-src 'self';"
+RewriteEngine On
+
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*) https://%{SERVER_NAME}/$1 [R,L]
+
 DirectoryIndex app.php
 
 # By default, Apache does not evaluate symbolic links if you did not enable this
