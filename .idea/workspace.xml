@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94e1aae8-bc70-4d6f-8d4d-d6179152f80b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/.htaccess" afterPath="$PROJECT_DIR$/web/.htaccess" />
-    </list>
+    <list default="true" id="94e1aae8-bc70-4d6f-8d4d-d6179152f80b" name="Default" comment="" />
     <ignored path="FirstProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
