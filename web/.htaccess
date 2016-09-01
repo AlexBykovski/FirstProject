@@ -4,7 +4,9 @@
 # start page (path "/") because otherwise Apache will apply the rewriting rules
 # to each configured DirectoryIndex file (e.g. index.php, index.html, index.pl).
 Header set Content-Security-Policy "default-src 'self';"
-Header set Strict-Transport-Security: max-age=15768000
+Header set Strict-Transport-Security: max-age=15768000;
+Header set X-Content-Type-Options nosniff;
+Header set X-XSS-Protection "1; mode=block;";
 
 DirectoryIndex app.php
 
